@@ -14,10 +14,9 @@ scoreboard objectives add deaths deathCount
 scoreboard objectives add lives dummy
 scoreboard objectives add kills playerKillCount
 
-# Set worldborder unless it's already set
+# Set worldborder
 worldborder center ~ ~
 worldborder set 700
-scoreboard players set currentBorder 3rdLifeSettings 700
 
 # Add team
 team add team_green
@@ -33,7 +32,7 @@ team modify team_dead prefix ["",{"text": "["},{"text": "DIED","color": "gray"},
 scoreboard objectives setdisplay list lives
 
 # Reset all scores on install
-function 3rdlife:main/reset
+function 3rdlife:reset
 
 # start the loop
 function 3rdlife:main/loop

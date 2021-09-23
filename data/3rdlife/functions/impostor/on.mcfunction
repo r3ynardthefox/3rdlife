@@ -16,7 +16,7 @@ scoreboard players set @a isImpostor 0
 scoreboard players set @r isImpostor 1
 
 # Show info for the impostor and the others
-execute as @a if score @s isImpostor matches 1 run tellraw @s { "text": "You are the Impostor. Kill someone before the time runs out!", "color":"yellow" }
+execute as @a if score @s isImpostor matches 1 run tellraw @s { "text": "You are the Impostor. Kill someone before the time runs out!", "color":"red" }
 execute as @a if score @s isImpostor matches 0 run tellraw @a ["",{"text": "["},{"text": "The impostor has been chosen... Run for your lives!","color": "red"},{"text": "] "}]
 
 function 3rdlife:impostor/loop

@@ -1,2 +1,4 @@
 #!/bin/bash
-zip -r 3rdlife.zip data pack.mcmeta
+mkdir build
+cd build
+zip -r 3rdlife.zip ../data ../pack.mcmeta

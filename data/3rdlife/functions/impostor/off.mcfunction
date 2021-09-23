@@ -1,7 +1,7 @@
-# Check if impostor comleted the objective
+# Check if impostor completed the objective
 # If the impostor successfully killed someone then he recieves a life
-execute as @a if score @s isImpostor matches 1 if score @s kills matches 1 run scoreboard players add @s lives 1
-execute as @a if score @s isImpostor matches 1 if score @s kills matches 1 run tellraw @s {"text": "You gained a new life!", "color": "green"}
+execute as @a if score @s isImpostor matches 1 if score @s kills matches 1..100 run scoreboard players add @s lives 1
+execute as @a if score @s isImpostor matches 1 if score @s kills matches 1..100 run tellraw @s {"text": "The Impostor WON! +1 life!", "color": "red"}
 
 # If the impostor failed he will be set to the last life
 execute as @a if score @s isImpostor matches 1 if score @s kills matches 0 run scoreboard players set @s lives 1
