@@ -1,11 +1,13 @@
 # Setup gamemode
 gamemode survival @a
-title @a times 1 1 1
+title @a times 1 5 1
 title @a actionbar ["",{"text": "["},{"text": "Welcome to","color": "yellow"},{"text": " 3rd Life", "color": "red"},{"text": "!] "}]
 
 # Add scoreboards for settings
 scoreboard objectives add 3rdLifeSettings dummy
 scoreboard objectives add impostorSettings dummy
+scoreboard objectives add temps dummy
+scoreboard objectives add constants dummy
 
 # Add scoreboards for tracking kills and deaths
 scoreboard objectives add deaths deathCount
