@@ -1,11 +1,11 @@
 # Uninstall everything
-scoreboard objectives remove 3rdLifeSettings
-scoreboard objectives remove impostorSettings
-scoreboard objectives remove temps
-scoreboard objectives remove constants
-scoreboard objectives remove deaths
-scoreboard objectives remove lives
-scoreboard objectives remove kills
+scoreboard objectives remove 3rd.config
+scoreboard objectives remove 3rd.config
+scoreboard objectives remove 3rd.variables
+scoreboard objectives remove 3rd.constants
+scoreboard objectives remove 3rd.deaths
+scoreboard objectives remove 3rd.lives
+scoreboard objectives remove 3rd.kills
 
 team remove team_dead
 team remove team_red
